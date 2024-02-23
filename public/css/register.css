@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#cc2b5e , #753a88);
+    display: flex;
+    justify-content: center;
+   
+}
+.outer_div{
+    width: 500px;
+    height: 680px;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    box-sizing: border-box;
+}
+.app_name_div{
+    margin-top: 50px;
+    text-align: center;
+}
+.names_div{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    align-items: center;
+}
+.email,.password,.gender{
+    text-indent: 20px;
+    
+}
+.app_name_div,.first_name,.last_name,.email,.password,.gender,.submit_btn{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+}
+.first_name,.last_name{
+    width: 39%;
+} 
+.submit_btn{
+    cursor: pointer;
+    width: 40%;
+    background-color: rgb(48, 97, 231);
+    color: white;
+    margin-top: 20px;
+}
+.first_name,.last_name,.email,.password,.submit_btn::placeholder{
+    font-size: 20px;
+    text-indent: 20px;
+}
+a{
+    margin-top: -20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.error-msg{
+    display: none;
+}
+.success-msg{
+    display: none;
+}
+/* Pages responsivness start over here */
+@media screen and (max-width:700px){
+    .outer_div{
+        width: 450px;
+    }
+}
+@media screen and (max-width:500px){
+    .outer_div{
+        width: 400px;
+    }
+}
+@media screen and (max-width:400px){
+    .outer_div{
+        width: 96vw;
+        margin-top:50px;
+    }
+}
+@media screen and (max-width:340px){
+    .first_name,.last_name,.email,.password,.submit_btn,.gender::placeholder{
+        font-size: 15px;
+    }
+}
